@@ -1,58 +1,145 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  background: #f9f9f9;
   color: #333;
-  background-color: #f8f9fa;
 }
 
-header {
-  background: #007bff;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #0052cc;
   color: white;
-  padding: 2rem;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1598514982886-4c7a8788934a?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.cta-button {
+  background: #25D366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Section Styles */
+section {
+  padding: 3rem 2rem;
   text-align: center;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.card {
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
+/* Why Section */
+.why-list {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+.why-list li {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+/* Testimonials */
+.testimonial {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 1.5rem;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
   margin: auto;
 }
-
-h2 {
-  color: #007bff;
+form input, form textarea {
   margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
-
-ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-#contact button {
-  background: #25d366;
+form button {
+  padding: 0.75rem;
+  background: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  margin-top: 10px;
-  cursor: pointer;
+  font-weight: bold;
   border-radius: 5px;
 }
 
-#contact button:hover {
-  background: #1ebe57;
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+footer .socials a {
+  color: #aaa;
+  margin: 0 5px;
+  text-decoration: none;
 }
 
-footer {
-  background: #343a40;
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
   color: white;
-  text-align: center;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
