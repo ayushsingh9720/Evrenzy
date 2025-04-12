@@ -1,8 +1,4 @@
-function openWhatsApp() {
-  const phone = "919876543210"; // Use your business WhatsApp number
-  const message = encodeURIComponent(
-    "Hi! I'm interested in your housekeeping services."
-  );
-  const url = `https://wa.me/${phone}?text=${message}`;
-  window.open(url, "_blank");
-}
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert("Thank you for reaching out! We'll get back to you shortly.");
+});
